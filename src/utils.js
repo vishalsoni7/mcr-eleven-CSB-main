@@ -21,7 +21,7 @@ export const AddStared = () =>
   });
 
 export const RemoveStared = () =>
-  toast.error("Removed in Stared!", {
+  toast.error("Removed from Stared!", {
     style: {
       fontSize: "small",
       borderRadius: "10px",
@@ -31,7 +31,7 @@ export const RemoveStared = () =>
   });
 
 export const RemoveWatchlater = () =>
-  toast.error("Removed in Stared!", {
+  toast.error("Removed from Watchlater!", {
     style: {
       fontSize: "small",
       borderRadius: "10px",

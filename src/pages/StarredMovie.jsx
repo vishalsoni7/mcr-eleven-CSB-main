@@ -7,6 +7,10 @@ export const StarredMovie = () => {
 
   return (
     <div className="home">
+      {starredMovies.length === 0 && (
+        <h2 className="nothing"> Nothing is Stared </h2>
+      )}
+
       {starredMovies.map((card, i) => (
         <div key={i}>
           {" "}

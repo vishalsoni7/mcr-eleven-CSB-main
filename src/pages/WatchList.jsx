@@ -6,6 +6,9 @@ export const WatchList = () => {
   const { watchList } = useContext(MovieContext);
   return (
     <div className="home">
+      {watchList.length === 0 && (
+        <h2 className="nothing"> Nothing in Watchlater</h2>
+      )}
       {watchList?.map((card, i) => (
         <div key={i}>
           {" "}

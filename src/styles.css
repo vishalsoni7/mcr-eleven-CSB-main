@@ -120,8 +120,25 @@ body {
 
 .card-btn-div button {
   width: 50%;
-  padding: 0.5rem;
+  padding: 0.6rem;
   margin: 0.5rem;
+  border: none;
+  background: #252525;
+  color: whitesmoke;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.card-btn-div-1 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.card-btn-div-1 button {
+  padding: 0.6rem;
+  margin: 0.5rem;
+  margin-left: 0;
   border: none;
   background: #252525;
   color: whitesmoke;
@@ -240,4 +257,17 @@ body {
 
 .singlemovie-child {
   text-align: left;
+  width: -webkit-fill-available;
+}
+
+.nothing {
+  color: gray;
+}
+
+.btn {
+  margin-right: 1rem;
+}
+
+.s-btn {
+  width: 10rem;
 }

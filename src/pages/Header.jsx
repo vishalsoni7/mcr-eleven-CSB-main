@@ -11,7 +11,7 @@ export const Header = () => {
     years,
     filterByGenre,
     filterByYaer,
-    filterByRatings
+    filterByRatings,
   } = useContext(MovieContext);
   return (
     <div className="header">
@@ -39,6 +39,7 @@ export const Header = () => {
         onClick={() => {
           setModal(true);
         }}
+        className="btn"
       >
         Add Movie{" "}
       </button>

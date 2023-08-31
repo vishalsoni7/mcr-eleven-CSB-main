@@ -10,7 +10,7 @@ export const SingleMovie = () => {
     inWatchlist,
     isStared,
     removeFromStared,
-    removeFromWishList
+    removeFromWishList,
   } = useContext(MovieContext);
   const { movieId } = useParams();
 
@@ -20,7 +20,7 @@ export const SingleMovie = () => {
     <div className="singlemovie">
       <img src={findMovie?.imageURL} alt="" />
 
-      <div className="singlemovie-child ">
+      <div className="singlemovie-child">
         <h2> {findMovie?.title} </h2>
         <p> {findMovie?.summary} </p>
         <p> Year: {findMovie?.year} </p>
@@ -42,23 +42,34 @@ export const SingleMovie = () => {
           ))}{" "}
         </p>
 
-        <div className="card-btn-div">
+        <div className="card-btn-div-1">
           {inWatchlist(findMovie?.id) ? (
-            <button onClick={() => removeFromWishList(findMovie?.id)}>
+            <button
+              className="s-btn"
+              onClick={() => removeFromWishList(findMovie?.id)}
+            >
               Added in Watchlist{" "}
             </button>
           ) : (
-            <button onClick={() => addWishlist(findMovie?.id)}>
+            <button
+              className="s-btn"
+              onClick={() => addWishlist(findMovie?.id)}
+            >
               Add to Watchlist{" "}
             </button>
           )}
 
           {isStared(findMovie?.id) ? (
-            <button onClick={() => removeFromStared(findMovie?.id)}>
+            <button
+              className="s-btn"
+              onClick={() => removeFromStared(findMovie?.id)}
+            >
               Stared
             </button>
           ) : (
-            <button onClick={() => makeStared(findMovie?.id)}>Star </button>
+            <button className="s-btn" onClick={() => makeStared(findMovie?.id)}>
+              Star{" "}
+            </button>
           )}
         </div>
       </div>
